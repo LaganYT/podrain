@@ -3,38 +3,17 @@
     <div class="p-3 text-white">
       <h1 class="text-xl text-center">Settings</h1>
 
-      <div class="mt-2">
-        <input type="checkbox" class="mr-2" v-model="wakeLock" id="wakelock-id">
-        <label for="wakelock-id">Keep awake</label>
-      </div>
-
-      <div class="mt-2">
-        Proxy URL
-        <input 
-          type="text" 
-          class="w-full p-1 mt-1 text-black"
-          v-model="proxyURL"
-        />
-        <button 
-          class="w-full bg-green-500 h-8 text-white"
-          @click="saveProxyURL"
-        >
-          <font-awesome-icon icon="save" class="mr-1" />
-          Save
-        </button>
-      </div>
-
       <div class="mt-6">
         <button 
           class="bg-purple-600 p-1 text-white mr-1 w-full"
           @click="downloadBackup"
         >
           <font-awesome-icon icon="download" class="mr-1" />
-          Download Backup
+          Download Backup Of Podcasts
         </button>
       </div>
 
-      <h2 class="text-white mt-3">Restore backup</h2>
+      <h2 class="text-white mt-3">Restore backup Of Podcasts</h2>
       <input 
         type="file" 
         class="text-white mt-1"
