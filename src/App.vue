@@ -51,11 +51,11 @@
   const menu = [
   {
       link: '/home',
-      icon: 'itunes-note',
+      icon: 'home',
     },
   {
       link: '/podcasts',
-      icon: 'home',
+      icon: 'music',
     },
     {
       link: '/queue',
