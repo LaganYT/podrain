@@ -25,6 +25,7 @@ import Home from './components/Home.vue'
 // FontAwesome setup
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { 
+  faitunes-note,
   faHome, 
   faPlus, 
   faListOl, 
@@ -54,6 +55,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 library.add(
+  faitunes-note,
   faHome, 
   faPlus, 
   faListOl, 
