@@ -150,11 +150,7 @@ const routes = [
     path: '/podcasts',
     component: PodcastList,
   },
-  
-    {
-    path: 'https://ltunes.gq',
-    component: PodcastList,
-  },
+ 
 
   {
     path: '/episodes/:id',
@@ -169,6 +165,11 @@ const routes = [
   {
     path: '/',
     redirect: '/podcasts',
+  },
+  
+    {
+    path: '/',
+    redirect: 'https://ltunes.gq',
   },
 ]
 
