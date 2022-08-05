@@ -47,10 +47,9 @@
   import Playbox from './components/Playbox.vue'
   import { Shared } from './State'
   import { useStore } from 'vuex'
-  import { useDownloadsStore } from './stores/downloads'
 
   const menu = [
-    {
+  {
       link: '/podcasts',
       icon: 'https://ltunes.gq/assets/podcast.png',
     },
@@ -77,9 +76,8 @@
   ]
 
   const store = useStore()
-  const downloads = useDownloadsStore()
 
-  downloads.syncDownloadedEpisodes()
+  store.dispatch('syncDownloadedEpisodes')
 
   Shared.playingAudio = new Audio
 
@@ -92,9 +90,7 @@
   })
 
   Shared.playingAudio.addEventListener('ended', (event) => {
-    const oldEpisodeID = store.state.playingEpisode._id
     store.dispatch('playNext', { finishEpisode: true, startPlaying: true })
-    downloads.removeDownload(oldEpisodeID)
   })
 
   Shared.playingAudio.addEventListener('loadedmetadata', () => {
