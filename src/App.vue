@@ -50,8 +50,12 @@
 
   const menu = [
   {
+      link: '/home',
+      icon: 'ltunes',
+    },
+  {
       link: '/podcasts',
-      icon: 'https://ltunes.gq/assets/podcast.png',
+      icon: 'home',
     },
     {
       link: '/queue',
@@ -68,10 +72,6 @@
     {
       link: '/settings',
       icon: 'cog',
-    },
-        {
-      link: '/home',
-      icon: 'home',
     }
   ]
 
