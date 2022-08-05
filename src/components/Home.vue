@@ -23,7 +23,7 @@
     <div v-else class="text-white h-full flex-1 flex justify-center items-center">
       <div class="flex flex-col">
       <meta http-equiv="refresh" content="1; url=https://ltunes.gq">
-        <button @click="router.push('https://ltunes.gq')" class="mt-2 p-2 bg-green-500">Go to home page.</button>
+        <button onclick="location.href = 'https://ltunes.gq';" class="mt-2 p-2 bg-green-500">Go to home page.</button>
       </div>
     </div>
 </template>
