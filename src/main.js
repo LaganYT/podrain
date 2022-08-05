@@ -20,7 +20,7 @@ import EpisodeShow from './components/EpisodeShow.vue'
 import EpisodeSearch from './components/EpisodeSearch.vue'
 import PodcastCreate from './components/PodcastCreate.vue'
 import History from './components/History.vue'
-import Home from './componets/Home.vue'
+import Home from './components/Home.vue'
 
 // FontAwesome setup
 import { library } from '@fortawesome/fontawesome-svg-core'
