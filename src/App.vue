@@ -51,7 +51,7 @@
   const menu = [
   {
       link: '/home',
-      icon: 'ltunes',
+      icon: 'itunes-note',
     },
   {
       link: '/podcasts',
