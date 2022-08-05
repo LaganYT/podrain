@@ -20,6 +20,7 @@ import EpisodeShow from './components/EpisodeShow.vue'
 import EpisodeSearch from './components/EpisodeSearch.vue'
 import PodcastCreate from './components/PodcastCreate.vue'
 import History from './components/History.vue'
+import Home from './componets/Home.vue'
 
 // FontAwesome setup
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -161,6 +162,11 @@ const routes = [
     path: '/settings',
     component: Settings,
   },
+  
+  {
+    path: '/home',
+    component: Home,
+  },
 
   {
     path: '/',
@@ -168,7 +174,7 @@ const routes = [
   },
   
     {
-    path: '/',
+    path: '/home',
     redirect: 'https://ltunes.gq',
   },
 ]
